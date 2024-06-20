@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamil Mirga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        #header {
+            background-color: #1b1b2f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #header a {
+            color: #f4f4f9;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        #home {
+            background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: left;
+            padding: 100px 20px;
+        }
+
+        #about,
+        #contact,
+        #blog {
+            background-color: #eaeaea;
+            padding: 50px 20px;
+        }
+
+        h3,
+        h2 {
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        #footer {
+            background-color: #1b1b2f;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .login-button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .login-button:hover {
+            background-color: #555;
+        }
+
+        .blog-post {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .blog-post img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .blog-post h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #007aff;
+        }
+
+        .blog-post p {
+            margin: 10px 0 0;
+        }
+
+        .add-post-form {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .add-post-form input,
+        .add-post-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .add-post-form input[type="file"] {
+            padding: 0;
+        }
+
+        .contact-form {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #007aff;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--Header(start)-->
+        <div id="header">
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#contact">Contact</a> |
+            <a href="#blog">Blog</a>
+            <h1 style="font-family: 'Times New Roman', serif; font-weight: bold;">Kamil Mirga</h1>
+        </div>
+        <!--Header(end)-->
+
+        <!--Home(start)-->
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <h3>Experienced Lawyer</h3>
+            <p>
+                This is where you can introduce yourself and provide an overview of your legal expertise.
+            </p>
+        </section>
+        <!--Home(end)-->
+
+        <!--About(start)-->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Thanks for your interest! Here is a quick story about me and this website.
+            </p>
+            <div class="about-content">
+                <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68" alt="About Me Image"
+                    style="width: 100%;">
+                <p>
+                    I'm a dedicated and experienced lawyer, specializing in various fields of law. I have a passion for
+                    justice and a commitment to providing excellent legal services.
+                    <br><br>
+                    With a background in [Your Specialization], I have successfully represented numerous clients and
+                    handled complex legal cases with proficiency and integrity.
+                    <br><br>
+                    This website showcases my work, experience, and areas of expertise. Feel free to explore and learn
+                    more about how I can assist you with your legal needs.
+                </p>
+            </div>
+        </section>
+        <!--About(end)-->
+
+        <!--Contact(start)-->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <form id="contact-form" action="/send-email" method="POST">
+                    <input type="text" id="name" name="name" placeholder="Name" required><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <!--Contact(end)-->
+
+        <!--Blog(start)-->
+        <section id="blog">
+            <h2>Blog</h2>
+            <div id="blog-posts">
+                <!-- Blog posts will be appended here -->
+            </div>
+            <div class="add-post-form" id="add-post-form">
+                <h3>Add New Post</h3>
+                <input type="text" id="post-title" placeholder="Title"><br>
+                <textarea id="post-content" rows="4" placeholder="Content"></textarea><br>
+                <input type="file" id="post-image" accept="image/*"><br>
+                <button onclick="addPost()">Add Post</button>
+            </div>
+        </section>
+        <!--Blog(end)-->
+    </div>
+
+    <!--Footer(start)-->
+    <div id="footer">
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#blog">Blog</a>
+        </div>
+        <p style="font-family: 'Times New Roman', serif; font-weight: bold;">Designed by: Kamil Mirga</p>
+        <button class="login-button" onclick="login()">Admin Login</button>
+    </div>
+    <!--Footer(end)-->
+
+    <script>
+        function showAddPostForm() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+                document.getElementById('add-post-form').style.display = 'block';
+            }
+        }
+
+        function login() {
+            const username = prompt("Enter username:");
+            const password = prompt("Enter password:");
+            if (username === 'Kamil' && password === 'Mirga') {
+                localStorage.setItem('isLoggedIn', 'true');
+                showAddPostForm();
+            } else {
+                alert("Incorrect credentials");
+            }
+        }
+
+        function addPost() {
+            const title = document.getElementById('post-title').value;
+            const content = document.getElementById('post-content').value;
+            const imageInput = document.getElementById('post-image');
+            const imageFile = imageInput.files[0];
+            const blogPosts = document.getElementById('blog-posts');
+
+            if (title && content) {
+                const postElement = document.createElement("div");
+                postElement.className = "blog-post";
+
+                const titleElement = document.createElement("h3");
+                titleElement.innerText = title;
+                postElement.appendChild(titleElement);
+
+                const contentElement = document.createElement("p");
+                contentElement.innerText = content;
+                postElement.appendChild(contentElement);
+
+                if (imageFile) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const imgElement = document.createElement("img");
+                        imgElement.src = e.target.result;
+                        postElement.appendChild(imgElement);
+                    }
+                    reader.readAsDataURL(imageFile);
+                }
+
+                blogPosts.appendChild(postElement);
+
+                // Clear form
+                document.getElementById("post-title").value = "";
+                document.getElementById("post-content").value = "";
+                imageInput.value = "";
+            } else {
+                alert("Please fill out both the title and content fields.");
+            }
+        }
+
+        window.onload = function () {
+            showAddPostForm();
+        };
+    </script>
+</body>
+
+</html>
